@@ -1,0 +1,14 @@
+{
+  "name": "university-timetable-planner",
+  "version": "1.0.0",
+  "description": "A university timetable planner with course selection, custom events, local persistence, and PDF/JPG export.",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
