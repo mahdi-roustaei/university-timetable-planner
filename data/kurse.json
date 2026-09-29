@@ -1,0 +1,268 @@
+{
+  "kurse": [
+    {
+      "id": 1,
+      "name": "Webtechnologien",
+      "studiengang": [
+        "mdi",
+        "bin"
+      ],
+      "semester": "SoSe 2026",
+      "ects": 6,
+      "beschreibung": "In diesem Kurs lernen die Studierenden die Grundlagen der Webentwicklung kennen, einschließlich HTML, CSS und JavaScript. Es werden auch fortgeschrittene Themen wie Frameworks und Websicherheit behandelt.",
+      "dozent": "Demo-Dozent 1",
+      "starttermin": "2026-03-01",
+      "endtermin": "2026-06-20",
+      "termine": [
+        {
+          "typ": "Vorlesung",
+          "id": "VL1",
+          "tag": "Montag",
+          "block": "2",
+          "raum": "Demo-Raum 01",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE1",
+          "tag": "Montag",
+          "block": "3",
+          "raum": "Demo-Raum 02",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE2",
+          "tag": "Dienstag",
+          "block": "2",
+          "raum": "Demo-Raum 03",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE3",
+          "tag": "Freitag",
+          "block": "1",
+          "raum": "Demo-Raum 04",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE4",
+          "tag": "Freitag",
+          "block": "2",
+          "raum": "Demo-Raum 04",
+          "wiederholung": "wöchentlich"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Betriebssysteme und Netze 2",
+      "studiengang": [
+        "bin"
+      ],
+      "semester": "SoSe 2026",
+      "ects": 6,
+      "beschreibung": "In diesem Kurs vertiefen die Studierenden ihr Wissen über Betriebssysteme und Netzwerke. Es werden Themen wie Prozessverwaltung, Speicherverwaltung, Dateisysteme und Netzwerkprotokolle behandelt.",
+      "dozent": "Demo-Dozent 2",
+      "starttermin": "2026-03-01",
+      "endtermin": "2026-06-20",
+      "termine": [
+        {
+          "typ": "Vorlesung",
+          "id": "VL1",
+          "tag": "Dienstag",
+          "block": "2",
+          "raum": "Demo-Raum 05",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE1",
+          "tag": "Mittwoch",
+          "block": "4",
+          "raum": "Demo-Raum 04",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE2",
+          "tag": "Mittwoch",
+          "block": "5",
+          "raum": "Demo-Raum 04",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE2",
+          "tag": "Donnerstag",
+          "block": "3",
+          "raum": "Demo-Raum 02",
+          "wiederholung": "wöchentlich"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Software Engineering",
+      "studiengang": [
+        "mdi",
+        "bin"
+      ],
+      "semester": "SoSe 2026",
+      "ects": 6,
+      "beschreibung": "In diesem Kurs lernen die Studierenden die Prinzipien und Praktiken des Software Engineerings kennen. Es werden Themen wie Softwareentwicklungsmethoden, Anforderungsanalyse, Softwarearchitektur und Testen behandelt.",
+      "dozent": "Demo-Dozent 3",
+      "starttermin": "2026-03-01",
+      "endtermin": "2026-06-20",
+      "termine": [
+        {
+          "typ": "Vorlesung",
+          "id": "VL1",
+          "tag": "Donnerstag",
+          "block": "2",
+          "raum": "Demo-Raum 05",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE1",
+          "tag": "Donnerstag",
+          "block": "4",
+          "raum": "Demo-Raum 04",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE2",
+          "tag": "Donnerstag",
+          "block": "5",
+          "raum": "Demo-Raum 04",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE3",
+          "tag": "Donnerstag",
+          "block": "6",
+          "raum": "Demo-Raum 04",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE3",
+          "tag": "Donnerstag",
+          "block": "3",
+          "raum": "Demo-Raum 04",
+          "wiederholung": "wöchentlich"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Computer Grafik",
+      "studiengang": [
+        "mdi",
+        "bin"
+      ],
+      "semester": "SoSe 2026",
+      "ects": 6,
+      "beschreibung": "In diesem Kurs lernen die Studierenden die Grundlagen der Computergrafik kennen. Es werden Themen wie 2D- und 3D-Grafik, Rendering, Animation und Grafikprogrammierung behandelt.",
+      "dozent": "Demo-Dozent 4",
+      "starttermin": "2026-03-01",
+      "endtermin": "2026-06-20",
+      "termine": [
+        {
+          "typ": "Vorlesung",
+          "id": "VL1",
+          "tag": "Montag",
+          "block": "4",
+          "raum": "Demo-Raum 01",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE1",
+          "tag": "Montag",
+          "block": "5",
+          "raum": "Demo-Raum 04",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE2",
+          "tag": "Mittwoch",
+          "block": "3",
+          "raum": "Demo-Raum 06",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE3",
+          "tag": "Donnerstag",
+          "block": "3",
+          "raum": "Demo-Raum 06",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE4",
+          "tag": "Donnerstag",
+          "block": "4",
+          "raum": "Demo-Raum 06",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE4",
+          "tag": "Donnerstag",
+          "block": "5",
+          "raum": "Demo-Raum 06",
+          "wiederholung": "wöchentlich"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Statistik",
+      "studiengang": [
+        "mdi",
+        "bin"
+      ],
+      "semester": "SoSe 2026",
+      "ects": 6,
+      "beschreibung": "In diesem Kurs lernen die Studierenden die Grundlagen der Statistik kennen. Es werden Themen wie deskriptive Statistik, Wahrscheinlichkeitsverteilungen, Hypothesentests und Regression behandelt.",
+      "dozent": "Demo-Dozent 5",
+      "starttermin": "2026-03-01",
+      "endtermin": "2026-06-20",
+      "termine": [
+        {
+          "typ": "Vorlesung",
+          "id": "VL1",
+          "tag": "Montag",
+          "block": "1",
+          "raum": "Demo-Raum 01",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE1",
+          "tag": "Montag",
+          "block": "3",
+          "raum": "Demo-Raum 07",
+          "wiederholung": "wöchentlich"
+        },
+        {
+          "typ": "Übung",
+          "id": "UE2",
+          "tag": "Donnerstag",
+          "block": "3",
+          "raum": "Demo-Raum 08",
+          "wiederholung": "zweiwöchentlich"
+        }
+      ]
+    }
+  ],
+  "_note": "Portfolio demo data. Lecturer names and room identifiers are fictional; this is not an official course timetable."
+}

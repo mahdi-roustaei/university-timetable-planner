@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Stundenplan – Kursauswahl</title>
+    <meta name="description" content="University timetable planner with course selection and personal events. Portfolio demonstration using fictional lecturer names and room identifiers."/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+<nav>
+    <a class="nav-logo" href="#">
+        <div class="nav-logo-icon">
+            <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+            >
+                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                <path d="M16 2v4M8 2v4M3 10h18"/>
+                <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/>
+            </svg>
+        </div>
+        <span class="nav-logo-text">Stunden<span>plan</span></span>
+    </a>
+    <div class="nav-right">
+        <button class="btn btn-ghost" id="filter-btn">
+            <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+            >
+                <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/>
+            </svg>
+            Filter
+        </button>
+    </div>
+</nav>
+
+<div class="app-body">
+    <aside class="sidebar">
+        <div class="sidebar-head">
+            <h2>Verfügbare Kurse</h2>
+            <div class="sidebar-filter">
+                <svg
+                        width="13"
+                        height="13"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#4C566A"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                >
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="M21 21l-4.35-4.35"/>
+                </svg>
+                <input type="text" placeholder="Kurse suchen…"/>
+            </div>
+        </div>
+        <div class="sidebar-list"></div>
+    </aside>
+
+    <div class="main-area">
+        <div class="main-toolbar">
+            <div class="main-toolbar-left">
+                <h2>Mein Stundenplan</h2>
+                <span class="demo-note">Demo-Kurskatalog</span>
+            </div>
+            <div class="main-toolbar-right">
+                <button class="btn-sm btn-primary" id="btn-open-task">
+                    <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                    >
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    Eigener Termin
+                </button>
+                <button class="btn-sm btn-sm-outline">
+                    <svg
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                    >
+                        <path
+                                d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"
+                        />
+                    </svg>
+                    Export
+                </button>
+            </div>
+        </div>
+
+        <div class="calendar-wrapper">
+            <div class="schedule-shell">
+                <table class="schedule-table">
+                    <colgroup>
+                        <col class="col-time"/>
+                        <col/>
+                        <col/>
+                        <col/>
+                        <col/>
+                        <col/>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>Zeit</th>
+                        <th>Montag</th>
+                        <th>Dienstag</th>
+                        <th>Mittwoch</th>
+                        <th>Donnerstag</th>
+                        <th>Freitag</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>8:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>14:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>18:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>20:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>22:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="schedule-grid" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="task-modal">
+    <div class="modal">
+        <div class="modal-header">
+            <h2 class="modal-title">Eigener Termin</h2>
+            <button class="close-btn" id="btn-close-task">&times;</button>
+        </div>
+
+        <form id="custom-task-form">
+            <div class="form-group">
+                <label for="title">Titel</label>
+                <input
+                        type="text"
+                        id="title"
+                        placeholder="z.B. Arbeiten, Lerngruppe..."
+                        required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="description">Beschreibung (Optional)</label>
+                <textarea
+                        id="description"
+                        placeholder="Zusätzliche Details hinzufügen"
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <div class="days-header">
+                    <label>Tage auswählen</label>
+                </div>
+                <div class="days-grid">
+                    <label class="checkbox-item"
+                    ><input type="checkbox" checked/> Montag</label
+                    >
+                    <label class="checkbox-item"
+                    ><input type="checkbox"/> Dienstag</label
+                    >
+                    <label class="checkbox-item"
+                    ><input type="checkbox"/> Mittwoch</label
+                    >
+                    <label class="checkbox-item"
+                    ><input type="checkbox"/> Donnerstag</label
+                    >
+                    <label class="checkbox-item"
+                    ><input type="checkbox"/> Freitag</label
+                    >
+                </div>
+            </div>
+
+            <div class="time-grid">
+                <div class="form-group">
+                    <label for="start">Startzeit</label>
+                    <input type="time" id="start" value="08:00" required/>
+                </div>
+                <div class="form-group">
+                    <label for="end">Endzeit</label>
+                    <input type="time" id="end" value="09:30" required/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Farbe im Stundenplan</label>
+                <div class="color-select">
+                    <select id="color-select-input">
+                        <option value="event-custom-blue">Blau (Vorlesung)</option>
+                        <option value="event-custom-green" selected>
+                            Grün (Übung)
+                        </option>
+                        <option value="event-custom-red">Rot (Wichtig)</option>
+                        <option value="event-custom-purple">
+                            Lila (Generell/Sonstiges)
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="footer">
+                <button
+                        type="button"
+                        class="btn btn-cancel"
+                        id="btn-delete-task"
+                        style="
+                display: none;
+                border-color: var(--color-konflikt);
+                color: var(--color-konflikt);
+                margin-right: auto;
+              "
+                >
+                    Löschen
+                </button>
+                <button type="button" class="btn btn-cancel" id="btn-cancel-task">
+                    Abbrechen
+                </button>
+                <button type="submit" class="btn btn-save">Speichern</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="modal-overlay" id="filter-modal">
+    <div class="modal">
+        <div class="modal-header">
+            <div>
+                <h2 class="modal-title">Filter</h2>
+                <p class="modal-subtitle">Kurse nach Studiengang anzeigen</p>
+            </div>
+            <button type="button" class="close-btn" id="close-filter" aria-label="Schließen">
+                &times;
+            </button>
+        </div>
+
+        <div class="form-group">
+            <label>Studiengang</label>
+            <div class="filter-options">
+                <label class="filter-option checkbox-item">
+              <span class="filter-option-text">
+                  <input type="checkbox" value="mdi"/>
+                <span class="filter-option-title">Mediendesign Informatik</span>
+                <span class="filter-option-tag">MDI</span>
+              </span>
+                </label>
+                <label class="filter-option checkbox-item">
+              <span class="filter-option-text">
+                  <input type="checkbox" value="bin"/>Angewandte Informatik
+                <span class="filter-option-tag">BIN</span>
+              </span>
+                </label>
+            </div>
+        </div>
+
+        <div class="footer">
+            <button type="button" class="btn btn-cancel" id="reset-filter">Zurücksetzen</button>
+            <button type="button" class="btn btn-save" id="apply-filter">Anwenden</button>
+        </div>
+    </div>
+</div>
+
+
+<script type="module" src="./main.js"></script>
+</body>
+</html>
